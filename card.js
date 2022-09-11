@@ -14,14 +14,18 @@ function onlyNumberKey(e){
     }
 }
 
+
 month.onkeyup=function(){
     var input=parseInt(this.value);
+
     if(input>=0 && input<=31 || input=="Backspace"){
         return;
     }
+
     if(input>31) {
         alert("enter a valid input");
     }
+
 }
 
 year.onkeyup=function(){

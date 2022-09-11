@@ -34,13 +34,13 @@
     
     <div class="date">
         <h5>EXP.DATE (MM/YY)</h5>
-        <input type="text" id="month" placeholder="MM" onchange="handleChange(this)" maxlength="2" style="position:absolute; margin-top:-1rem;padding:0.5rem;width:20%">
-        <input type="text" id="year" placeholder="YY" onkeypress="return yearKey(event)" maxlength="2" style="position:absolute; margin-top:-1rem;margin-left:3rem;padding:0.5rem;width:19%">
+        <input type="text" id="month" placeholder="MM" onkeypress="return onlyNumberKey(event)"  maxlength="2" style="position:absolute; margin-top:-1rem;padding:0.5rem;width:20%">
+        <input type="text" id="year" placeholder="YY"  onkeypress="return onlyNumberKey(event)" maxlength="2" style="position:absolute; margin-top:-1rem;margin-left:3rem;padding:0.5rem;width:19%">
      </div>
      
      <div class="cvc">
         <h5 style="position:absolute;margin-left:10rem">CVC</h5>
-        <input type="text" id="CVC" placeholder="e.g. 123" style="position:absolute; margin-top:2.8rem;margin-left:10rem;padding:0.5rem;width:290%">
+        <input type="text" id="CVC" placeholder="e.g. 123"  onkeypress="return onlyNumberKey(event)" style="position:absolute; margin-top:2.8rem;margin-left:10rem;padding:0.5rem;width:290%">
     </div>
 
 
