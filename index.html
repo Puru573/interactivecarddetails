@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intractive card details</title>
+</head>
+<body>
+    <div class="halfbackground-color"></div>
+    <div class="frontdebit-card">
+        <h3 style="position:relative;text-align:center;margin-top:4rem;color:white;font-size: 1.5rem;">0000  0000  0000  0000</h3>
+        <h5 style="position: absolute;margin-top: -0.5rem ; margin-left:-0.2rem;color: white; font-size: 0.7rem;">JANE APPLESSED</h5>
+        <h5 style="position:relative;margin-left:11rem;margin-top:-0.6rem;color:white">00/00</h5>
+        <div class="circle"></div>
+        <div class="transparentcircle"></div>
+
+    </div>
+    <div class="backdebit-card">
+        <div class="backstrip"></div>
+        <div class="greystrip" >000</div>
+    </div>
+    
+    <div class="cardholder">
+        <h5>CARDHOLDER NAME</h5>
+        <input type="text" placeholder="e.g. Jane Applessed" style="position:absolute; margin-top:-1rem;padding:0.5rem;width:200%">
+    </div>
+    
+    <div class="cardnumber">
+        <h5>CARD NUMBER</h5>
+        <input type="text"  placeholder="e.g. 1234 5678 9123 0000" onkeypress="return onlyNumberKey(event)" maxlength="20" style="position:absolute; margin-top:-1rem;padding:0.5rem;width:280%">
+    </div>
+    
+    <div class="date">
+        <h5>EXP.DATE (MM/YY)</h5>
+        <input type="text" id="month" placeholder="MM" onchange="handleChange(this)" maxlength="2" style="position:absolute; margin-top:-1rem;padding:0.5rem;width:20%">
+        <input type="text" id="year" placeholder="YY" onkeypress="return yearKey(event)" maxlength="2" style="position:absolute; margin-top:-1rem;margin-left:3rem;padding:0.5rem;width:19%">
+     </div>
+     
+     <div class="cvc">
+        <h5 style="position:absolute;margin-left:10rem">CVC</h5>
+        <input type="text" id="CVC" placeholder="e.g. 123" style="position:absolute; margin-top:2.8rem;margin-left:10rem;padding:0.5rem;width:290%">
+    </div>
+
+
+    <button type="button" class="button" style="position:absolute;margin-left:55rem;margin-top:30rem;width:18.5%;background-color:  rgb(115,66,179);color:white; padding:0.7rem;cursor: pointer;">Confirm</button>
+    <script src="./card.js"></script>
+</body>
+</html>

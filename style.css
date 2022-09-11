@@ -1,0 +1,95 @@
+.halfbackground-color{
+    background-color:rgb(160,55,181);
+    position: absolute;
+    width:30vw;
+    height:100vh;
+    margin-top:-1.5rem;
+    margin-left:-1rem;
+
+}
+
+.frontdebit-card{
+    position: absolute;
+    width:16vw;
+    height:18vh;
+    padding:20px;
+    border-radius: 0.5rem;
+    background-color: rgb(115,66,179);
+    margin-top: 9rem;
+    margin-left:15rem;
+}
+.circle{
+    position:absolute;
+    border-radius: 60%;
+    width:18%;
+    height: 28%;
+    background-color:white;
+    margin-top: -9rem;
+}
+.transparentcircle{
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(115,66,179);
+    width:10%;
+    height:19%;
+    margin-top: -8.5rem;
+    margin-left:4rem;
+    border:2px solid white;
+
+
+
+}
+.backdebit-card{
+    position: absolute;
+    width:16vw;
+    height:18vh;
+    padding:20px;
+    border-radius: 0.5rem;
+    background-color: rgb(115,66,179);
+    margin-top: 21rem;
+    margin-left:19rem;
+}
+.backstrip{
+    position: absolute;
+    background-color: black;
+    width:88%;
+    margin-left:-1.3rem;
+    padding:1rem;
+
+}
+.greystrip{
+    position: absolute;
+    background-color: lightgray;
+    width:80%;
+    margin-top:3rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.cardholder{
+    position: absolute;
+    margin-left: 55rem;
+    margin-top: 12rem;
+}
+.cardnumber{
+    position: absolute;
+    margin-left: 55rem;
+    margin-top: 17rem;
+}
+
+.date{
+    position: absolute;
+    margin-left: 55rem;
+    margin-top: 23rem;
+    
+}
+.cvc{
+    position: absolute;
+    margin-left: 55rem;
+    margin-top: 23rem;
+    width:2%;
+}
+input[type="text"]{
+    font-size:1rem;
+}
